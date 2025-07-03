@@ -1,4 +1,4 @@
-# Garbage Classification with MobileNetV2 (Transfer Learning)
+# Garbage Classification with MobileNetV2
 
 **Author**: Cyberpradeep  
 **Repo**: [Final_Project](https://github.com/Cyberpradeep/Final_Project)  
