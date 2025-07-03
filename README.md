@@ -1,6 +1,50 @@
-# Final_Project
+# Garbage Classification with MobileNetV2 (Transfer Learning)
 
+**Author**: Cyberpradeep  
+**Repo**: [Final_Project](https://github.com/Cyberpradeep/Final_Project)  
+**Model**: Trained on 6 garbage types using MobileNetV2  
+**Interface**: Gradio Web UI
 
+---
+
+## Objective
+
+Build a deep learning model that can classify images of garbage into categories like:
+- `cardboard`
+- `glass`
+- `metal`
+- `paper`
+- `plastic`
+- `trash`
+
+This promotes smart waste segregation, essential for environmental sustainability 🌍♻️.
+
+---
+
+## Project Highlights
+
+-  **Transfer Learning** with MobileNetV2 (`imagenet` weights)
+- Trained with images organized into 6 class folders
+- 224x224 image input, normalized and augmented
+- Final `.h5` model saved in Google Drive
+- Deployed with **Gradio** for real-time predictions
+
+---
+
+---
+
+## Model Architecture
+
+-  Base model: **MobileNetV2** (frozen during initial training)
+-  Custom classifier head:
+  - GlobalAveragePooling2D  
+  - BatchNormalization  
+  - Dense(128, relu) + Dropout  
+  - Dense(10, softmax)
+-  Optimizer: Adam
+-  Loss: sparse_categorical_crossentropy
+
+---
 
 
 ## Accuracy
